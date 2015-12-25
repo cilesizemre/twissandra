@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.cilesizemre.twissandra"/>
+
+    <bean class="com.cilesizemre.twissandra.controller.dao.Connector" id="connector">
+        <constructor-arg name="node" value="192.168.99.100"/>
+        <constructor-arg name="port" value="32769"/>
+        <constructor-arg name="keyspace" value="twissandra"/>
+    </bean>
+
+    <bean class="com.cilesizemre.twissandra.controller.dao.schemacreator.SchemaCreatorImpl" id="schemaCreator"
+          depends-on="connector">
+        <constructor-arg name="replicationFactor" value="1"/>
+        <constructor-arg name="rebuildDB" value="false"/>
+    </bean>
+
+</beans>
