@@ -1,4 +1,4 @@
-# twissandra
+# Documentation
 
 This repository is implementation of Twissandra with Spring and Cassandra.
 
