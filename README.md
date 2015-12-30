@@ -8,14 +8,14 @@ All functional features serviced by this repository can be seen in <a href="http
 
 If you want to run this application locally, you can use Docker Container. (For creationg a Cassandra cluster with Docker Container locally, you can look over <a href="https://emrecilesiz.wordpress.com/2015/12/29/docker-ile-cassandra-cluster-kurulumu/" target="_blank">this</a> blog post.)
 
-Besides Twissandra presents you REST services, you can access these services like below:
-Add User: http://localhost/twissandra/user/add?username=user1&password=password1
-Follow User: http://localhost/twissandra/user/follow?username=user1&friend=user2
-Get Followings: http://localhost/twissandra/followings/get?username=user1
-Get Followers: http://localhost/twissandra/followers/get?username=user1
-Send Tweet: http://localhost/twissandra/tweet/send?username=user1&text=tweet1
-Get Timeline: http://localhost/twissandra/timeline/get?username=user1
-Get Userline: http://localhost/twissandra/userline/get?username=user1
+Besides Twissandra presents you REST services, you can access these services like below:<br/>
+Add User: http://localhost/twissandra/user/add?username=user1&password=password1 <br/>
+Follow User: http://localhost/twissandra/user/follow?username=user1&friend=user2 <br/>
+Get Followings: http://localhost/twissandra/followings/get?username=user1 <br/>
+Get Followers: http://localhost/twissandra/followers/get?username=user1 <br/>
+Send Tweet: http://localhost/twissandra/tweet/send?username=user1&text=tweet1 <br/>
+Get Timeline: http://localhost/twissandra/timeline/get?username=user1 <br/>
+Get Userline: http://localhost/twissandra/userline/get?username=user1 <br/>
 
 <b>Twissandra Data Modeling:</b>
 
