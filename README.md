@@ -6,7 +6,7 @@ All you need is to configure application properties via applicationContext.xml (
 
 All functional features serviced by this repository can be seen in <a href="https://github.com/cilesizemre/twissandra/blob/master/src/test/java/com/cilesizemre/twissandra/TestTwissandra.java" target="_blank">TestTwissandra</a>.
 
-If you want to run this application locally, you can use Docker Container. (For creationg a Cassandra cluster with Docker Container locally, you can look over <a href="https://emrecilesiz.wordpress.com/2015/12/29/docker-ile-cassandra-cluster-kurulumu/" target="_blank">this</a> blog post.)
+If you want to run this application locally, you can use Docker Container. (For creating a Cassandra cluster with Docker Container locally, you can look over <a href="https://emrecilesiz.wordpress.com/2015/12/29/docker-ile-cassandra-cluster-kurulumu/" target="_blank">this</a> blog post.)
 
 Besides Twissandra presents you REST services, you can access these services like below:<br/>
 Add User: http://localhost/twissandra/user/add?username=user1&password=password1 <br/>
